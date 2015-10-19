@@ -1,0 +1,20 @@
+<?php
+
+function pet_menu() {
+    $items = array();
+    $items['pet'] = array(
+        'title' => "My Favorite Pet",
+        'page callback' => 'favorite_pet',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+        );
+    return $items;
+}
+
+function favorite_pet() {
+    return '
+        <h2>Odie</h2>
+        <img src="https://s-media-cache-ak0.pinimg.com/736x/16/e6/3d/16e63de1de47d3a0331c7e76ba28a232.jpg">
+        <a href="http://garfield.wikia.com/wiki/Odie">More info</a>
+    ';
+}

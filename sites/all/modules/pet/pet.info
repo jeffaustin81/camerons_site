@@ -1,5 +1,0 @@
-name = Pet
-description = Information about favorite pet.
-package = My First Modules
-core = 7.x
-files[] = pet.module
